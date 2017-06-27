@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-15-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-15-0 http://www.eiffel.com/developers/xml/configuration-1-15-0.xsd" name="maze_escape" uuid="F0A3FE63-9269-493E-B5A8-AF4AA0173353">
+	<target name="maze_escape">
+		<root class="MAZE_ESCAPE" feature="make"/>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<setting name="concurrency" value="scoop"/>
+		<precompile name="base_pre" location="$ISE_PRECOMP\base-scoop-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
+		<library name="time" location="$ISE_LIBRARY\library\time\time-safe.ecf"/>
+		<cluster name="maze_escape" location=".\" recursive="true">
+			<class_option class="CONTROLLER" trace="true" profile="true">
+			</class_option>
+			<class_option class="SINGLETON_ACCESSOR" trace="true" profile="true">
+			</class_option>
+			<file_rule>
+				<exclude>/.svn$</exclude>
+				<exclude>/CVS$</exclude>
+				<exclude>/EIFGENs$</exclude>
+			</file_rule>
+			<file_rule>
+				<exclude>^maze_cluster$</exclude>
+			</file_rule>
+		</cluster>
+	</target>
+</system>
