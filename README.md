@@ -1,5 +1,6 @@
 # MazeEscape
 Open maze escape.ecf on EiffelStudio to run the game.
+
 The ‘Maze Escape’ game’s main purpose is for the player to escape the maze with the highest amount of gold. There is only one room that allows the player to escape the maze to complete the game. A player can pick up gold and items from different rooms. Every time a player enters a room that is ‘unexplored’, an event may occur. The following possible events are:
 - treasure chest event
 - booby trapped chest event
